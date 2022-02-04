@@ -13,7 +13,7 @@ const useFetch = (url) => {
             });
       };
       fetchData();
-   });
+   }, []);
 
    return { data };
 };
