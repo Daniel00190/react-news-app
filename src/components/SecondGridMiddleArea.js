@@ -4,7 +4,7 @@ import LinearDeterminate from "../subComponents/LinearDeterminate";
 import useFetch from "../subComponents/myFetchHook";
 
 export default function SecondGridMiddleArea() {
-   const { data, isLoading } = useFetch("/home/entertainment");
+   const { data, isLoading } = useFetch("home/entertainment");
 
    return (
       <div className="secondGridMiddleArea">

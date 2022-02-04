@@ -4,7 +4,7 @@ import LinearDeterminate from "../subComponents/LinearDeterminate";
 import useFetch from "../subComponents/myFetchHook";
 
 export default function TopSection() {
-   const url = "/home/tech";
+   const url = "home/tech";
    const { data, isLoading, hasError, errorMessage, updateUrl } = useFetch(url);
 
    return (

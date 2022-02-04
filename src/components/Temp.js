@@ -41,7 +41,7 @@ export default function Temp() {
          },
          body: JSON.stringify(locationData),
       };
-      fetch("/weather", options)
+      fetch("https://react-d-news.herokuapp.com/weather", options)
          .then((response) => response.json())
          .then((data) => {
             let weatherTemp = ((data.current.temp - 273.15) * 1.8 + 32).toFixed(
