@@ -5,7 +5,7 @@ const useFetch = (url) => {
 
    useEffect(() => {
       const fetchData = () => {
-         fetch(url)
+         fetch(`https://react-d-news.herokuapp.com/${url}`)
             .then((res) => res.json())
             .then((result) => {
                setData(result.articles);
@@ -13,7 +13,7 @@ const useFetch = (url) => {
             });
       };
       fetchData();
-   }, []);
+   });
 
    return { data };
 };

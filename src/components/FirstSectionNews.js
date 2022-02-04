@@ -4,7 +4,7 @@ import LinearDeterminate from "../subComponents/LinearDeterminate";
 import useFetch from "../subComponents/myFetchHook";
 
 function FirstSectionNews() {
-   const { data, isLoading } = useFetch("/home/top");
+   const { data, isLoading } = useFetch("home/top");
 
    return (
       <div className="firstSectionNews">
