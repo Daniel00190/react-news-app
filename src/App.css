@@ -286,6 +286,8 @@ a {
    aspect-ratio: 2.5/1.5;
    border-radius: 0.5rem;
    object-fit: cover;
+   float: right;
+   margin-left: 0.5rem;
 }
 
 .firstSectionNews {

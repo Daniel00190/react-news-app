@@ -16,7 +16,7 @@ function RigthSection() {
                .map((article) => (
                   <HeadlineWithImg
                      imgurl={article.urlToImage}
-                     headline={article.title}
+                     headline={article.title.slice(0, 80)}
                      url={article.url}
                   />
                ))
