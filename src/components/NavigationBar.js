@@ -5,7 +5,7 @@ import NavBarLinksTopics from "./NavBarLinksTopics";
 import Temp from "./Temp";
 import Date from "./Date";
 import NavBarLinksSources from "./NavBarLinksSources";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 
 function NavigationBar() {
    return (

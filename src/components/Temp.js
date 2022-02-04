@@ -60,7 +60,7 @@ export default function Temp() {
       <div>
          <div className="temperature">
             <img
-               src={`http://openweathermap.org/img/wn/${icon}.png`}
+               src={`https://openweathermap.org/img/wn/${icon}.png`}
                alt=""
                srcSet=""
             />
