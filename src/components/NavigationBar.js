@@ -13,9 +13,9 @@ function NavigationBar() {
          <ul className="navUl">
             <Temp />
             <h1 className="logo">
-               <Link to="/">
+               <a href="/">
                   <p>D|News</p>
-               </Link>
+               </a>
             </h1>
             <NavBarLinksTopics />
             <NavBarLinksSources />
