@@ -4,7 +4,7 @@ import ComPage from "../subRoutes/comPage";
 import useFetch from "../subComponents/myFetchHook";
 
 export default function Espn() {
-   const { data } = useFetch("https://react-d-news.herokuapp.com/sources/espn");
+   const { data } = useFetch("/sources/espn");
 
    return <ComPage news={data} />;
 }

@@ -5,7 +5,7 @@ import LinearDeterminate from "../subComponents/LinearDeterminate";
 
 function RigthSection() {
    const url = "home/tech";
-   const { data, isLoading, hasError, errorMessage, updateUrl } = useFetch(url);
+   const { data } = useFetch(url);
 
    return (
       <div className="right-section-news ">

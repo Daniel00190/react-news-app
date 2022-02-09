@@ -1,13 +1,17 @@
-import React from "react";
-
-import useFetch from "../subComponents/myFetchHook";
+import React, { useState, useEffect } from "react";
 
 import ComPage from "./comPage";
 
 export default function Entertainment() {
-   const { data, isLoading } = useFetch(
-      "https://react-d-news.herokuapp.com/topics/entertainment"
-   );
+   const [data, setData] = useState();
+
+   useEffect(() => {
+      fetch(`/topics/entertainment`)
+         .then((res) => res.json())
+         .then((result) => {
+            setData(result.articles);
+         });
+   }, []);
 
    return <ComPage news={data} />;
 }

@@ -4,7 +4,7 @@ import ComPage from "../subRoutes/comPage";
 import useFetch from "../subComponents/myFetchHook";
 
 export default function Time() {
-   const { data } = useFetch("https://react-d-news.herokuapp.com/sources/time");
+   const { data } = useFetch("/sources/time");
 
    return <ComPage news={data} />;
 }

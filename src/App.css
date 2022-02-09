@@ -260,8 +260,8 @@ a {
    padding-bottom: 1rem;
 }
 .content {
-   display: flex;
-   align-items: center;
+   /* display: flex;
+   align-items: center; */
    font-weight: 900;
    margin: auto;
 }

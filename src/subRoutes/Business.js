@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ComPage from "./comPage";
-import useFetch from "../subComponents/myFetchHook";
 
 export default function Business() {
-   const { data, isLoading } = useFetch(
-      "https://react-d-news.herokuapp.com/topics/business"
-   );
+   const [data, setData] = useState();
+
+   useEffect(() => {
+      fetch(`/topics/business`)
+         .then((res) => res.json())
+         .then((result) => {
+            setData(result.articles);
+         });
+   }, []);
 
    return <ComPage news={data} />;
 }

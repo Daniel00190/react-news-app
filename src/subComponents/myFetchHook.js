@@ -5,15 +5,14 @@ const useFetch = (url) => {
 
    useEffect(() => {
       const fetchData = () => {
-         fetch(`https://react-d-news.herokuapp.com/${url}`)
+         fetch(url)
             .then((res) => res.json())
             .then((result) => {
                setData(result.articles);
-               console.log(result);
             });
       };
       fetchData();
-   }, [url]);
+   }, []);
 
    return { data };
 };

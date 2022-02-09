@@ -3,9 +3,7 @@ import useFetch from "../subComponents/myFetchHook";
 import LangComp from "./LangComp";
 
 function Spanish() {
-   const { data, isLoading } = useFetch(
-      "https://react-d-news.herokuapp.com/lang/spanish"
-   );
+   const { data, isLoading } = useFetch("/lang/spanish");
    console.log(data);
    return <LangComp news={data} />;
 }
