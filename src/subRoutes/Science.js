@@ -7,7 +7,7 @@ export default function Science() {
    const [data, setData] = useState();
 
    useEffect(() => {
-      fetch(`/topics/science`)
+      fetch(`https://react-d-news.herokuapp.com/topics/science`)
          .then((res) => res.json())
          .then((result) => {
             setData(result.articles);

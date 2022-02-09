@@ -7,7 +7,7 @@ export default function Health() {
    const [data, setData] = useState();
 
    useEffect(() => {
-      fetch(`/topics/health`)
+      fetch(`https://react-d-news.herokuapp.com/topics/health`)
          .then((res) => res.json())
          .then((result) => {
             setData(result.articles);

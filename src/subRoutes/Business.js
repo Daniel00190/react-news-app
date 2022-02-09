@@ -5,7 +5,7 @@ export default function Business() {
    const [data, setData] = useState();
 
    useEffect(() => {
-      fetch(`/topics/business`)
+      fetch(`https://react-d-news.herokuapp.com/topics/business`)
          .then((res) => res.json())
          .then((result) => {
             setData(result.articles);

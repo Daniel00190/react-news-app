@@ -7,7 +7,7 @@ export default function Sports() {
    const [data, setData] = useState();
 
    useEffect(() => {
-      fetch(`/topics/sports`)
+      fetch(`https://react-d-news.herokuapp.com/topics/sports`)
          .then((res) => res.json())
          .then((result) => {
             setData(result.articles);

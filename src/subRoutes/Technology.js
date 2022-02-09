@@ -6,7 +6,7 @@ export default function Technology() {
    const [data, setData] = useState();
 
    useEffect(() => {
-      fetch(`/topics/technology`)
+      fetch(`https://react-d-news.herokuapp.com/topics/technology`)
          .then((res) => res.json())
          .then((result) => {
             setData(result.articles);
