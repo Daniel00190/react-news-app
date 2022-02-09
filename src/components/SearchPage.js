@@ -19,11 +19,11 @@ function SearchPage({ liftedState }) {
    };
 
    useEffect(() => {
-      fetch("/search", requestOptions)
+      fetch("https://react-d-news.herokuapp.com/search", requestOptions)
          .then((response) => response.json())
          .then((result) => setstate(result.articles))
          .catch((error) => console.log("error", error));
-   }, [liftedState.input]);
+   }, []);
 
    return (
       <div>
