@@ -350,9 +350,6 @@ a {
    text-align: center;
    justify-content: space-evenly;
 }
-.topSectionDiv {
-   padding: 0.5rem;
-}
 
 .secondGrid {
    display: grid;
@@ -506,6 +503,16 @@ div a:hover {
    .firstSectionNews {
       display: none;
    }
+   .XLheadline {
+      font-size: clamp(1rem, 5vw, 1.2rem);
+   }
+   .big-headline {
+      font-size: clamp(0.8rem, 3vw, 1.1rem);
+   }
+   .description {
+      font-size: clamp(0.7rem, 2vw + 0.1rem, 0.9rem);
+      line-height: 1.4rem;
+   }
 
    .right-section-news {
       margin-top: 2rem;
@@ -516,9 +523,10 @@ div a:hover {
 
    .alignHeadline,
    .onlyImg img {
-      width: max(12rem, 30vw + 1rem);
+      width: max(10rem, 25vw + 1rem);
       padding: 0 0.8rem;
    }
+
    .alignHeadline {
       margin-bottom: 1rem;
       font-size: 1.2rem;
@@ -534,7 +542,7 @@ div a:hover {
 @media (max-width: 60em) {
    .main-container,
    .secondContainer {
-      width: 95vw;
+      width: 98vw;
    }
 
    .alignHeadline {
@@ -542,7 +550,7 @@ div a:hover {
    }
 }
 
-@media (min-width: 120em) {
+@media (min-width: 100em) {
    .main-container,
    .secondContainer {
       width: 60vw;
