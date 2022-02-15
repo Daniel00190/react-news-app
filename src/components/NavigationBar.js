@@ -11,7 +11,7 @@ function NavigationBar() {
    return (
       <div className="navbar">
          <ul className="navUl">
-            <Temp />
+            {/* <Temp /> */}
             <h1 className="logo">
                <a href="/">
                   <p>D|News</p>

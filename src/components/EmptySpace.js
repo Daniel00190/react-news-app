@@ -20,7 +20,7 @@ export default function EmptySpace({ setliftedState }) {
             <form className="search" onSubmit={handleSubmit}>
                <input
                   type="text"
-                  placeholder="I want to know about?"
+                  placeholder="search for..."
                   onChange={handleChange}
                />
 

@@ -1,3 +1,4 @@
+import { Icon } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 
 export default function Temp() {
@@ -30,6 +31,7 @@ export default function Temp() {
    }
    //POST lat and long
    //set geolocation
+
    function showPosition(position) {
       let lat = position.coords.latitude;
       let lon = position.coords.longitude;
@@ -44,13 +46,14 @@ export default function Temp() {
       fetch("/weather", options)
          .then((response) => response.json())
          .then((data) => {
+            console.log(data);
             let weatherTemp = ((data.current.temp - 273.15) * 1.8 + 32).toFixed(
                0
             );
-            let iconURL = data.current.weather[0].icon;
+            let icon = data.current.weather[0].icon;
             let daysMap = data.daily;
             setLocation(weatherTemp);
-            setIcon(iconURL);
+            setIcon(icon);
             setThreeDays(data.daily);
             console.log(data);
          });
@@ -60,7 +63,7 @@ export default function Temp() {
       <div>
          <div className="temperature">
             <img
-               src={`https://openweathermap.org/img/wn/${icon}.png`}
+               src={`http://openweathermap.org/img/wn/${icon}.png`}
                alt=""
                srcSet=""
             />
